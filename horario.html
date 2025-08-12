@@ -1,23 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Horario</title>
+  <meta charset="UTF-8" />
+  <title>Mi Horario Semanal</title>
+  <link rel="icon" href="img/logo.png" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      margin: 0;
+      min-height: 100vh;
+    }
+    header, nav, main, footer {
+      max-width: 900px;
+      margin: auto;
+      background-color: #1f1f1f;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #00e5ff;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px #00e5ff;
+    }
+    header p {
+      color: #80deea;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+    nav ul li a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus,
+    nav ul li a[aria-current="page"] {
+      background-color: #00bcd4;
+      color: #121212;
+      box-shadow: 0 0 12px #00bcd4;
+      outline: none;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    th, td {
+      border: 1px solid #00e5ff;
+      padding: 12px 15px;
+    }
+    th {
+      background-color: #004d40;
+      color: #a7ffeb;
+      text-transform: uppercase;
+    }
+    tr:nth-child(even) {
+      background-color: #00332f;
+    }
+    tr:hover {
+      background-color: #00695c;
+      cursor: default;
+      color: #e0f2f1;
+    }
+    .volver {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .volver a {
+      background-color: #00bcd4;
+      color: #121212;
+      text-decoration: none;
+      padding: 12px 28px;
+      font-weight: 700;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00bcd4;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block;
+    }
+    .volver a:hover,
+    .volver a:focus {
+      background-color: #00e5ff;
+      box-shadow: 0 0 18px #00e5ff;
+      outline: none;
+    }
+    footer {
+      max-width: 900px;
+      margin: 40px auto 0 auto;
+      text-align: center;
+      color: #00838f;
+      padding: 18px 10px;
+      font-weight: 500;
+      border-top: 1px solid #004d40;
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 12px;
+      }
+      table {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-<body style="background-color: #f5f5dc; text-align: center;">
-  <h1>Mi horario semanal</h1>
-  <table border="1" style="margin: auto; border-collapse: collapse;">
-    <tr style="background-color: #add8e6;">
-      <th>Día</th><th>Mañana</th><th>Tarde</th><th>Noche</th>
-    </tr>
-    <tr><td>Lunes</td><td>Colegio</td><td>Especialidad</td><td>Descanso</td></tr>
-    <tr><td>Martes</td><td>Colegio</td><td>Salir</td><td>Descanso</td></tr>
-    <tr><td>Miércoles</td><td>Colegio</td><td>Especialidad</td><td>Descanso</td></tr>
-    <tr><td>Jueves</td><td>Colegio</td><td>Tareas</td><td>Descanso</td></tr>
-    <tr><td>Viernes</td><td>Colegio</td><td>Amigos</td><td>Descanso</td></tr>
-    <tr><td>Sábado</td><td>Dormir</td><td>Salir</td><td>Descanso</td></tr>
-    <tr><td>Domingo</td><td>Aseo</td><td>Tareas</td><td>Tareas y descanso</td></tr>
-  </table>
-  <br><a href="index.html">Volver al inicio</a>
+<body>
+  <header>
+    <h1>Mi Horario Semanal</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nacimiento.html">Nacimiento</a></li>
+      <li><a href="familia.html">Familia</a></li>
+      <li><a href="educacion.html">Educación</a></li>
+      <li><a href="amigos.html">Amigos</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="musica.html">Música</a></li>
+      <li><a href="horario.html" aria-current="page">Horario</a></li>
+      <li><a href="proyecto_vida.html">Proyecto de Vida</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <table aria-label="Horario semanal">
+      <thead>
+        <tr>
+          <th>Día</th>
+          <th>Mañana</th>
+          <th>Tarde</th>
+          <th>Noche</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Lunes</td><td>Colegio</td><td>Especialidad</td><td>Descanso</td></tr>
+        <tr><td>Martes</td><td>Colegio</td><td>Salir</td><td>Descanso</td></tr>
+        <tr><td>Miércoles</td><td>Colegio</td><td>Especialidad</td><td>Descanso</td></tr>
+        <tr><td>Jueves</td><td>Colegio</td><td>Tareas</td><td>Descanso</td></tr>
+        <tr><td>Viernes</td><td>Colegio</td><td>Amigos</td><td>Descanso</td></tr>
+        <tr><td>Sábado</td><td>Dormir</td><td>Salir</td><td>Descanso</td></tr>
+        <tr><td>Domingo</td><td>Aseo</td><td>Tareas</td><td>Tareas y descanso</td></tr>
+      </tbody>
+    </table>
+
+    <div class="volver">
+      <a href="index.html">⬅ Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Luis Daniel Abril Fuentes - Todos los derechos reservados
+  </footer>
 </body>
 </html>
