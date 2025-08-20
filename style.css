@@ -1,0 +1,104 @@
+/* ======== Reset Básico ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ======== Estilo general ======== */
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* ======== Encabezado ======== */
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    color: #00bcd4;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00bcd4;
+  }
+  
+  /* ======== Menú de navegación ======== */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a[aria-current="page"] {
+    color: #00bcd4;
+  }
+  
+  /* ======== Contenido principal ======== */
+  main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  }
+  
+  main h2 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+  }
+  
+  main p {
+    margin-bottom: 15px;
+  }
+  
+  /* ======== Imágenes ======== */
+  main img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+  }
+  
+  /* ======== Listas ======== */
+  main ul {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  main ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* ======== Footer ======== */
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
