@@ -1,148 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mi Familia</title>
-  <link rel="icon" href="img/logo.png" />
+  <meta charset="UTF-8">
+  <title>Familia</title>
+  <link rel="icon" href="img/logo.png">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #121212;
-      color: #e0e0e0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      min-height: 100vh;
-      padding: 20px;
-      margin: 0;
-    }
-    header, nav, main, footer {
-      max-width: 900px;
-      margin: auto;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
-      background-color: #1f1f1f;
-      padding: 30px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-    }
-    header h1 {
-      color: #00e5ff;
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      text-shadow: 0 0 8px #00e5ff;
-    }  
-    header p {
-      color: #80deea;
-      font-size: 1.2rem;
-      font-weight: 500;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 0;
-      margin: 0 0 30px 0;
-    }
-    nav ul li a {
-      color: #00bcd4;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 10px 18px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: inline-block;
-    }
-    nav ul li a:hover,
-    nav ul li a:focus {
-      background-color: #00bcd4;
-      color: #121212;
-      box-shadow: 0 0 12px #00bcd4;
-      outline: none;
-    }
-    nav ul li a[aria-current="page"] {
-      background-color: #00bcd4;
-      color: #121212;
-      box-shadow: 0 0 12px #00bcd4;
-      pointer-events: none;
-    }
-    main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      align-items: center;
-    }
-    ul.familia-list {
-      list-style: disc inside;
-      font-size: 1.3rem;
-      max-width: 400px;
-      color: #80deea;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    main img {
-      max-width: 300px;
-      border-radius: 15px;
-      box-shadow: 0 0 25px #00e5ff88;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    main img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px #00e5ffcc;
-    }
-    .volver {
-      text-align: center;
-      margin-top: 30px;
-      width: 100%;
-    }
-    .volver a {
-      background-color: #00bcd4;
-      color: #121212;
-      text-decoration: none;
-      padding: 12px 28px;
-      font-weight: 700;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #00bcd4;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      display: inline-block;
-    }
-    .volver a:hover,
-    .volver a:focus {
-      background-color: #00e5ff;
-      box-shadow: 0 0 18px #00e5ff;
-      outline: none;
-    }
-    footer {
-      max-width: 900px;
-      margin: 40px auto 0 auto;
-      text-align: center;
-      color: #00838f;
-      padding: 18px 10px;
-      font-weight: 500;
-      border-top: 1px solid #004d40;
-      letter-spacing: 0.05em;
-      user-select: none;
-    }
-
-    @media (max-width: 700px) {
-      main {
-        flex-direction: column;
-      }
-      ul.familia-list {
-        max-width: 90%;
-        text-align: center;
-      }
-      main img {
-        max-width: 80%;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -164,20 +26,12 @@
   </nav>
 
   <main>
-    <ul class="familia-list" aria-label="Lista de miembros de mi familia">
-      <li>Luis Eduardo Abril Vásquez</li>
-      <li>Tulia Inés Fuentes Gómez</li>
-      <li>Tomas Santiago Abril Fuentes</li>
-      <li>Diego Alejandro Abril Fuentes</li>
-      <li>Luis Daniel Abril Fuentes</li>
-    </ul>
-
-    <img src="img/familia.png" alt="Foto de mi familia" />
+    <p>Mi familia está compuesta por mis padres y hermanos, quienes me apoyan en todo momento.</p>
+    <img src="img/familia.png" alt="Familia">
+    <div class="volver">
+      <a href="index.html">⬅ Volver al inicio</a>
+    </div>
   </main>
-
-  <div class="volver">
-    <a href="index.html">⬅ Volver al inicio</a>
-  </div>
 
   <footer>
     &copy; 2025 Luis Daniel Abril Fuentes - Todos los derechos reservados
